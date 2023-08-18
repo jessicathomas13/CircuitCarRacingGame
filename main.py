@@ -26,7 +26,7 @@ pygame.display.set_caption("Car Racing Game")
 
 
 class GameInfo:
-    LEVELS = 2
+    LEVELS = 3
 
     def __init__(self, level=1):
         self.FONT = pygame.font.SysFont("Mister Pixel 16 pt - Regular", 35)
