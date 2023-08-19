@@ -4,7 +4,7 @@ import math
 from utilities import scale_image, rotate_image, blit_text
 pygame.font.init()
 
-GRASS = scale_image(pygame.image.load("imgs/grass.jpg"), 2.5)
+GRASS = scale_image(pygame.image.load("imgs/grass.png"), 2.5)
 RACETRACK = scale_image(pygame.image.load("imgs/track.png"), 0.9)
 BORDER = scale_image(pygame.image.load("imgs/track-border.png"), 0.9)
 BORDER_MASK = pygame.mask.from_surface(BORDER)
@@ -272,7 +272,7 @@ while run:
     handle_collision(player_car, computer_car, game_info)
 
     if game_info.game_over():
-        blit_text(window, FONT, "YOU WON!")
+        blit_text(window, FONT, "CONGRATULATIONS! YOU WIN")
         pygame.display.update()
         pygame.time.wait(5000)
         game_info.reset()
